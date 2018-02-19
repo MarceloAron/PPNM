@@ -1,3 +1,4 @@
+! this is a comment
 program ex2
   implicit none
   real g, b
