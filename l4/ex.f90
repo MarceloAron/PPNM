@@ -11,10 +11,12 @@ use module_komplex
   type (komplex) :: cb
   type (komplex) :: ta
   type (komplex) :: tb  
-  
+  real x, y
+  type (komplex) :: z
+
   a = komplex(1.,2.)
   b = komplex(3.,4.)
-
+  
   print*, "a=", a
   print*, "b=", b
   
@@ -39,6 +41,15 @@ use module_komplex
   call komplex_print("a+b=",r)
   print*, "The result is the same as obtained with the normal print."
 
+  print*, "Now we will test komplex_set:"
+
+  x = 1.
+  y = 2.
+
+  print*, "x=", x, "and y=", y, ", so z should print" , x, y
+  call komplex_set(z,x,y)
+  print*, "z=", z
+  
 end program ex
 
 
