@@ -1,0 +1,7 @@
+set term png
+set out "plot.png"
+set xlabel "time"
+set ylabel "activity"
+plot\
+ "data" index 0 with errorbars title "experiment"\
+,"data" index 1 with lines title "model"

@@ -1,0 +1,8 @@
+set term pdf
+set out "plot.pdf"
+set grid
+set xlabel "x"
+set ylabel "y"
+set tics out
+set key bottom
+plot [-5:5][-5:5] "data" with lines title "my gamma", "data" using 1:3 with lines title "tgamma from math.h"
