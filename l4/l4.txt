@@ -1,0 +1,16 @@
+ a=   1.00000000       2.00000000    
+ b=   3.00000000       4.00000000    
+ a+b=   4.00000000       6.00000000    
+ a-b=  -2.00000000      -2.00000000    
+ a*b=  -5.00000000       10.0000000    
+ a/b=  0.439999998       7.99999982E-02
+ complex conjugate of a=   1.00000000      -2.00000000    
+ complex conjugate of b=   3.00000000      -4.00000000    
+ absolute value of a=   5.00000000       0.00000000    
+ absolute value of b=   25.0000000       0.00000000    
+ Now we will just test the komplex_print structure (it is not necessary to print complex numbers in Fortran):
+ a+b=   4.00000000       6.00000000    
+ The result is the same as obtained with the normal print.
+ Now we will test komplex_set:
+ x=   1.00000000     and y=   2.00000000     , so z should print   1.00000000       2.00000000    
+ z=   1.00000000       2.00000000    
