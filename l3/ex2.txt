@@ -1,0 +1,2 @@
+ The sum of 1/x from 1 to 1073741823 is:   21.371631081234895     
+ The sum of 1/x from 1073741823 to 1 is:   21.371631081232081     

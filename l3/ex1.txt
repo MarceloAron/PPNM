@@ -1,0 +1,5 @@
+ The lowest integer is: -2147483648
+ The highest integer is:  2147483647
+ The machine epsilon real*4 is:   1.19209290E-07
+ The machine epsilon real*8 is:   2.2204460492503131E-016
+ The machine epsilon real*16 is:   1.92592994438723585305597794258492732E-0034
