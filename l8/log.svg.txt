@@ -1,0 +1,12 @@
+set term   svg
+set out    "plot.svg"
+set title  "equatorial motion of a planet around a star"
+set xlabel "x"
+set ylabel "y"
+set grid
+set key left
+plot \
+ "data" using (1/$2)*sin($1):(1/$2)*cos($1) with lines notitle \
+,"-" with points pt 5 title "star"
+0 0
+e
