@@ -1,5 +1,5 @@
-set term pdf
-set out "plot.pdf"
+set term svg size 800,600 font 'Times,18' fsize 18
+set out "plot.svg"
 set grid
 set xlabel "x"
 set ylabel "y"

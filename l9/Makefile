@@ -1,7 +1,7 @@
 CFLAGS = -Wall -std=gnu99 `gsl-config --cflags`
 LDLIBS = `gsl-config --libs`
 
-plot.pdf: plot.gpi data
+plot.svg: plot.gpi data
 	gnuplot $<
 
 data: main
@@ -10,4 +10,4 @@ data: main
 main: main.o gamma_function.o
 
 clean:
-	$(RM) main *.o *pdf data
+	$(RM) main *.o *.svg data
