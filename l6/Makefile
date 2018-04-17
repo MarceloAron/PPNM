@@ -2,9 +2,9 @@ CFLAGS = -Wall -std=gnu99
 LDLIBS = -lm
 PLOTTER = gnuplot
 
-all: plot.eps
+all: plot.svg
 
-plot.eps: script.gnu cmd.dat io.dat
+plot.svg: script.gnu cmd.dat io.dat
 	gnuplot script.gnu
 
 cmd.dat: main-cmdline data.dat
@@ -20,8 +20,8 @@ main-stdio: main-stdio.c
 	gcc main-stdio.c -o main-stdio -lm
 
 data.dat: Makefile
-	seq 0 0.1 16 > data.dat
+	seq 0 0.01 12.56 > data.dat
 
 clean:
-	rm -f *.dat main-stdio main-cmdline plot.eps
+	rm -f *.dat main-stdio main-cmdline plot.svg
 
