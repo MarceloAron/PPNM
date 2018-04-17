@@ -1,0 +1,55 @@
+rmax = 2
+iter=   1 e=  -0.413898 f(rmax)=   0.197943 
+iter=   2 e=  -0.234522 f(rmax)=  0.0671831 
+iter=   3 e=  -0.142359 f(rmax)=  0.0100491 
+converged
+iter=   4 e=  -0.126149 f(rmax)= 0.000659132 
+
+
+rmax = 3
+iter=   1 e=   -0.66073 f(rmax)=   0.578873 
+iter=   2 e=  -0.536868 f(rmax)=   0.233438 
+iter=   3 e=  -0.453165 f(rmax)=   0.053698 
+iter=   4 e=  -0.428159 f(rmax)=  0.0074396 
+converged
+iter=   5 e=  -0.424137 f(rmax)= 0.000300771 
+
+
+rmax = 4
+iter=   1 e=    -0.7442 f(rmax)=    2.01217 
+iter=   2 e=  -0.636058 f(rmax)=   0.924878 
+iter=   3 e=   -0.54407 f(rmax)=   0.296435 
+iter=   4 e=  -0.500679 f(rmax)=  0.0763667 
+iter=   5 e=  -0.485622 f(rmax)= 0.00995811 
+converged
+iter=   6 e=  -0.483364 f(rmax)= 0.000417766 
+
+
+rmax = 5
+iter=   1 e=  -0.789638 f(rmax)=    7.27437 
+iter=   2 e=  -0.692471 f(rmax)=    3.58319 
+iter=   3 e=  -0.598147 f(rmax)=    1.35761 
+iter=   4 e=  -0.540609 f(rmax)=   0.481841 
+iter=   5 e=  -0.508952 f(rmax)=   0.121826 
+iter=   6 e=  -0.498239 f(rmax)=  0.0170271 
+converged
+iter=   7 e=  -0.496499 f(rmax)= 0.000763311 
+
+
+rmax = 10
+iter=   1 e=  -0.883877 f(rmax)=    5467.37 
+iter=   2 e=  -0.822043 f(rmax)=     2939.4 
+iter=   3 e=  -0.750146 f(rmax)=    1329.37 
+iter=   4 e=  -0.690781 f(rmax)=     634.61 
+iter=   5 e=  -0.636556 f(rmax)=    290.165 
+iter=   6 e=  -0.590877 f(rmax)=    130.109 
+iter=   7 e=  -0.553744 f(rmax)=     55.079 
+iter=   8 e=  -0.526485 f(rmax)=     21.054 
+iter=   9 e=  -0.509617 f(rmax)=    6.50749 
+iter=  10 e=  -0.502072 f(rmax)=    1.30337 
+iter=  11 e=  -0.500182 f(rmax)=   0.112922 
+iter=  12 e=  -0.500003 f(rmax)= 0.00225835 
+converged
+iter=  13 e=  -0.499999 f(rmax)= 4.21493e-06 
+
+
