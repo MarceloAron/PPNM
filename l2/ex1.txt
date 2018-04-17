@@ -1,0 +1,6 @@
+ The gamma function of 5 is:   24.0000000    
+ The bessel function of the first kind of order 1 of 0.5 is:  0.242268458    
+ The square root of -2 is:             (0.00000000,1.41421354)
+ The euler number elevated in the 'i'th power is:           (0.540302277,0.841470957)
+ The euler number elevated in the 'i*pi'th power is:      (-1.00000000,-8.742277657E-08)
+ The imaginary number elevated in the 'e'th power is:         (-0.428219765,-0.903674603)
