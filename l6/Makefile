@@ -1,27 +1,23 @@
-CFLAGS = -Wall -std=gnu99
-LDLIBS = -lm
-PLOTTER = gnuplot
-
 all: plot.svg
 
-plot.svg: script.gnu cmd.dat io.dat
+plot.svg: script.gnu io.dat cmd.dat
 	gnuplot script.gnu
 
-cmd.dat: main-cmdline data.dat
-	./main-cmdline `cat data.dat` > cmd.dat
+io.dat: stdio data.dat
+	for n in `wc -l data.dat | awk '{print $$1}'`; do ./stdio $$n > io.dat; done
 
-main-cmdline: main-cmdline.c
-	gcc main-cmdline.c -o main-cmdline -lm
+stdio: stdio.f90
+	gfortran stdio.f90 -o stdio
 
-io.dat: main-stdio data.dat
-	cat data.dat | ./main-stdio > io.dat
+cmd.dat: cmdline data.dat
+	for n in `cat data.dat`; do ./cmdline $$n >> cmd.dat; done
 
-main-stdio: main-stdio.c
-	gcc main-stdio.c -o main-stdio -lm
+cmdline: cmdline.f90
+	gfortran cmdline.f90 -o cmdline
 
 data.dat: Makefile
-	seq 0 0.01 12.56 > data.dat
+	seq 0 0.2 20 | cat > data.dat
 
 clean:
-	rm -f *.dat main-stdio main-cmdline plot.svg
-
+	find . -type f -executable -delete
+	rm -f *.dat *.svg *~

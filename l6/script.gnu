@@ -1,11 +1,10 @@
-set xrange [0:12.56]
-set yrange [-1.5:1.5]
 set xlabel 'x'
 set ylabel 'f(x)'
-set grid
+set yrange [-1:1.5]
 
-plot 'io.dat' w l lc rgb 'red' t 'standard input - cos(x)', 'cmd.dat' w l lc rgb 'blue' t 'command line - sin(x)'
+plot 'io.dat' w lp pt 7 ps 0.2 lc rgb 'red' t 'Standard input: cos(x)', \
+'cmd.dat' w lp pt 7 ps 0.2 lc rgb 'blue' t 'Command line argument: sin(x)'
 
-set term svg size 800,600 font 'Times,18' fsize 18
+set term svg size 800,600 background "white" font "Times,18"
 set out 'plot.svg'
 replot
