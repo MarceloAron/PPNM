@@ -1,17 +1,17 @@
-CFLAGS += -Wall -std=gnu1x $$(gsl-config --cflags)
-LDLIBS += $$(gsl-config --libs)
+all: out.txt
+	cat out.txt
 
-.PHONEY:all
-all: gamma.eps linear.out.txt
-	cat $(word 2,$^)
-gamma.eps:gamma.gnu gamma.data
-	gnuplot $<
-gamma.data:gamma
-	./$< > $@
-linear.out.txt:linear
-	./$< > $@
+out.txt: main
+	./main > out.txt
 
-.PHONEY:clean
+main: main.o qr_gramschmidt.o
+	gfortran main.o qr_gramschmidt.o -o main
+
+main.o: main.f90 qr_gramschmidt.mod
+	gfortran -c main.f90
+
+qr_gramschmidt.o qr_gramschmidt.mod: qr_gramschmidt.f90
+	gfortran -c qr_gramschmidt.f90
+
 clean:
-	find . -type f -executable -delete
-	rm -f *.o *.txt *.data *.eps
+	rm -f main *.o *.mod out.txt *~
