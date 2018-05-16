@@ -1,26 +1,14 @@
 all: out.txt
 	cat out.txt
 
-out.txt: A.txt B.txt
-	cat A.txt B.txt | cat > out.txt
+out.txt: AB
+	./AB > out.txt
 
-A.txt: A
-	./A > A.txt
+AB: AB.o roots.o qr_givens.o
+	gfortran AB.o roots.o qr_givens.o -o AB
 
-B.txt: B
-	./B > B.txt
-
-B: B.o roots.o qr_givens.o
-	gfortran B.o roots.o qr_givens.o -o B
-
-B.o: B.f90 roots.mod
-	gfortran -c B.f90
-
-A: A.o roots.o qr_givens.o
-	gfortran A.o roots.o qr_givens.o -o A
-
-A.o: A.f90 roots.mod
-	gfortran -c A.f90
+AB.o: AB.f90 roots.mod
+	gfortran -c AB.f90
 
 roots.o roots.mod: roots.f90 qr_givens.mod
 	gfortran -c roots.f90
