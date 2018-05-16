@@ -67,45 +67,6 @@ program exA
 
 !  print*
 !  print*
-
-!  write(*,*) "Finding the root of the gradient of the Rosenbrock's valley function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [2,2]  
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton(gradient_rosen,x,h,eps)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_rosen(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Rosenbrock's valley function:"  
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [3,-4]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton(gradient_rosen,x,h,eps)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_rosen(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Rosenbrock's valley function:"  
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [-9,9]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton(gradient_rosen,x,h,eps)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_rosen(x)
-
-!  print*
-!  print*
   
   write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
   write(*,*) "h=", h, "eps=", eps
@@ -117,71 +78,6 @@ program exA
   write(*,*) "Root=", x
   write(*,*) "Gradient=", gradient_himmel(x)
 
-!  print*  
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [2,1]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton(gradient_himmel,x,h,eps)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
-
-!  print*  
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [-2,3]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton(gradient_himmel,x,h,eps)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [3,-8]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton(gradient_himmel,x,h,eps)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [1,1]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton(gradient_himmel,x,h,eps)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [1,4]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton(gradient_himmel,x,h,eps)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
-
   write(*,*) "====================================================================="  
   write(*,*) "                              Exercise B                             "
   write(*,*) "====================================================================="
@@ -189,32 +85,6 @@ program exA
 !  write(*,*) "Finding the root of the gradient of the Rosenbrock's valley function:"
 !  write(*,*) "h=", h, "eps=", eps
 !  x = [-7,-4]  
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton_analyt_jac(gradient_rosen,x,eps,jacobian_rosen)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_rosen(x)
-
-!  print*
-!  print*
-  
-!  write(*,*) "Finding the root of the gradient of the Rosenbrock's valley function:"  
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [3,4]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton_analyt_jac(gradient_rosen,x,eps,jacobian_rosen)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_rosen(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Rosenbrock's valley function:"  
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [-9,-9]
 !  write(*,*) "Starting point:", x
 !  calls = 0
 !  call newton_analyt_jac(gradient_rosen,x,eps,jacobian_rosen)
@@ -234,57 +104,5 @@ program exA
   write(*,*) "Number of times function was called:", calls
   write(*,*) "Root=", x
   write(*,*) "Gradient=", gradient_himmel(x)
-
-!  print*  
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [-2,3]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton_analyt_jac(gradient_himmel,x,eps,jacobian_rosen)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [3,-8]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton_analyt_jac(gradient_himmel,x,eps,jacobian_rosen)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [4,1]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton_analyt_jac(gradient_himmel,x,eps,jacobian_rosen)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
-
-!  print*
-!  print*
-
-!  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
-!  write(*,*) "h=", h, "eps=", eps
-!  x = [1,4]
-!  write(*,*) "Starting point:", x
-!  calls = 0
-!  call newton_analyt_jac(gradient_himmel,x,eps,jacobian_rosen)
-!  write(*,*) "Number of times function was called:", calls
-!  write(*,*) "Root=", x
-!  write(*,*) "Gradient=", gradient_himmel(x)
   
 end program exA
