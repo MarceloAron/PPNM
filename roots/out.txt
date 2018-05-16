@@ -1,3 +1,10 @@
+ It was found that giving an analytic Jacobian decreases the number of 
+ times the function needs to be called, despite not changing the number
+ of steps it took to arrive at the roots. Also, the Himmelblau function
+ has, besides one maximum and four minima (as shown below), some "saddle
+ points" or "minimax points", that zero the gradient because they represent
+ a minimum in x and a maximum in y, or vice-versa.
+ 
  =====================================================================
                                Exercise A                             
  =====================================================================
