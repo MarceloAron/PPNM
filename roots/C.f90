@@ -76,7 +76,11 @@ program exC
   write(*,*) "====================================================================="  
   write(*,*) "                              Exercise C                             "
   write(*,*) "====================================================================="
+  print*
+  write(*,*) "--------------------------Numerical Jacobian-------------------------"
 
+  print*
+  
   write(*,*) "Solving the system of equations:"
   write(*,*) "h=", h, "eps=", eps
   x = [1,-5]  
@@ -149,7 +153,7 @@ program exC
 
   write(*,*) "Finding the root of the gradient of the Himmelblau's function:"  
   write(*,*) "h=", h, "eps=", eps
-  x = [2,1]
+  x = [2.5,1.5]
   write(*,*) "Starting point:", x
   calls = 0
   call newton_rls(gradient_himmel,x,h,eps,steps)
@@ -195,6 +199,135 @@ program exC
   write(*,*) "Starting point:", x
   calls = 0
   call newton_rls(gradient_himmel,x,h,eps,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps    
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", gradient_himmel(x)
+
+  print*
+
+  write(*,*) "-------------------------Analytical Jacobian-------------------------"
+
+  print*
+  
+  write(*,*) "Solving the system of equations:"  
+  write(*,*) "h=", h, "eps=", eps
+  x = [1,-5]  
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(syst_eq,x,eps,jacobian_syst,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps  
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", syst_eq(x)
+
+  print*
+  print*
+
+  write(*,*) "Solving the system of equations:"  
+  write(*,*) "h=", h, "eps=", eps
+  x = [4,7]  
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(syst_eq,x,eps,jacobian_syst,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps  
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", syst_eq(x)
+
+  print*
+  print*
+  
+  write(*,*) "Finding the root of the gradient of the Rosenbrock's valley function:"
+  write(*,*) "h=", h, "eps=", eps
+  x = [-7,-4]  
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(gradient_rosen,x,eps,jacobian_rosen,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps    
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", gradient_rosen(x)
+
+  print*
+  print*
+  
+  write(*,*) "Finding the root of the gradient of the Rosenbrock's valley function:"  
+  write(*,*) "h=", h, "eps=", eps
+  x = [2,2]
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(gradient_rosen,x,eps,jacobian_rosen,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps  
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", gradient_rosen(x)
+
+  print*
+  print*
+  
+  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
+  write(*,*) "h=", h, "eps=", eps
+  x = [-1,-1]
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(gradient_himmel,x,eps,jacobian_himmel,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", gradient_himmel(x)
+
+  print*  
+  print*
+
+  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
+  write(*,*) "h=", h, "eps=", eps
+  x = [2.5,1.5]
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(gradient_himmel,x,eps,jacobian_himmel,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps    
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", gradient_himmel(x)
+
+  print*
+  print*
+
+  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
+  write(*,*) "h=", h, "eps=", eps
+  x = [-2,3]
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(gradient_himmel,x,eps,jacobian_himmel,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps    
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", gradient_himmel(x)
+
+  print*
+  print*
+
+  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
+  write(*,*) "h=", h, "eps=", eps
+  x = [-5,-6]
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(gradient_himmel,x,eps,jacobian_himmel,steps)
+  write(*,*) "Number of times function was called:", calls
+  write(*,*) "Number of steps:", steps    
+  write(*,*) "Root=", x
+  write(*,*) "Gradient=", gradient_himmel(x)
+
+  print*
+  print*
+
+  write(*,*) "Finding the root of the gradient of the Himmelblau's function:"
+  write(*,*) "h=", h, "eps=", eps
+  x = [3,-8]
+  write(*,*) "Starting point:", x
+  calls = 0
+  call newton_analyt_jac_rls(gradient_himmel,x,eps,jacobian_himmel,steps)
   write(*,*) "Number of times function was called:", calls
   write(*,*) "Number of steps:", steps    
   write(*,*) "Root=", x
