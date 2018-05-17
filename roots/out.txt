@@ -162,3 +162,85 @@
  Number of steps:           8
  Root=   3.5844283403308177       -1.8481265269680078     
  Gradient=   9.1361769232216742E-012  -1.0342415710834419E-010
+ =====================================================================
+                               Exercise C                             
+ =====================================================================
+ Solving the system of equations:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:   1.0000000000000000       -5.0000000000000000     
+ Number of times function was called:         286
+ Number of steps:          39
+ Root=   9.1061465816198393        1.0981593463037553E-005
+ Gradient=  -2.2582180569941102E-009   1.7396295599251925E-011
+
+
+ Solving the system of equations:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:   4.0000000000000000        7.0000000000000000     
+ Number of times function was called:         591
+ Number of steps:          80
+ Root=   1.0981593295797742E-005   9.1061467408180725     
+ Gradient=  -4.8180348599657918E-012  -1.0437198251934260E-013
+
+
+ Finding the root of the gradient of the Rosenbrock's valley function:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:  -7.0000000000000000       -4.0000000000000000     
+ Number of times function was called:        5887
+ Number of steps:         832
+ Root=  0.99999999999998423       0.99999999999996836     
+ Gradient=   1.2878587085651115E-014  -2.2204460492503131E-014
+
+
+ Finding the root of the gradient of the Rosenbrock's valley function:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:   2.0000000000000000        2.0000000000000000     
+ Number of times function was called:        1821
+ Number of steps:         247
+ Root=   1.0000000000000013        1.0000000000000029     
+ Gradient=  -8.6153306710912261E-014   4.4408920985006262E-014
+
+
+ Finding the root of the gradient of the Himmelblau's function:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:  -1.0000000000000000       -1.0000000000000000     
+ Number of times function was called:          25
+ Number of steps:           5
+ Root= -0.27084459066734928      -0.92303855647997379     
+ Gradient=   3.9079850466805510E-014  -1.2079226507921703E-013
+
+
+ Finding the root of the gradient of the Himmelblau's function:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:   2.0000000000000000        1.0000000000000000     
+ Number of times function was called:          60
+ Number of steps:           9
+ Root=   3.3851541836070211        7.3851879837749337E-002
+ Gradient=   3.5527136788005009E-015  -2.2204460492503131E-016
+
+
+ Finding the root of the gradient of the Himmelblau's function:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:  -2.0000000000000000        3.0000000000000000     
+ Number of times function was called:          36
+ Number of steps:           6
+ Root=  -2.8051180869527630        3.1313125182505717     
+ Gradient=  -1.1694582217767982E-012  -1.3478773847281340E-013
+
+
+ Finding the root of the gradient of the Himmelblau's function:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:  -5.0000000000000000       -6.0000000000000000     
+ Number of times function was called:          30
+ Number of steps:           6
+ Root=  -3.7793102533777727       -3.2831859912862646     
+ Gradient=  -3.0298518672932511E-013  -7.6860606061384641E-012
+
+
+ Finding the root of the gradient of the Himmelblau's function:
+ h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
+ Starting point:   3.0000000000000000       -8.0000000000000000     
+ Number of times function was called:          40
+ Number of steps:           8
+ Root=   3.5844283403308359       -1.8481265269679430     
+ Gradient=   1.1471750002841752E-011  -1.0140857694800816E-010
