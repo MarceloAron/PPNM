@@ -7,6 +7,9 @@ a minimum in x and a maximum in y, or vice-versa. By aplying a more refined
 linesearch, the result was that, depending on the starting points, the number
 of times the function was called and the number of steps could be either
 higher, lower, or the same when compared to the simple backtrack linesearch.
+The points [2.5,1.5] in the refined linesearch differ from the ones used in
+the simple linesearch, [2,1], to get the desired root instead of a
+"saddle point".
 
 =====================================================================
                                Exercise A                             
@@ -305,8 +308,6 @@ higher, lower, or the same when compared to the simple backtrack linesearch.
  Gradient=   7.1054273576010019E-015  -7.1054273576010019E-014
 
 
- //These points were slightly changed from the ones used in exercises A and B
-   to get the desired root instead of a "saddle point". //
  Finding the root of the gradient of the Himmelblau's function:
  h=   1.4999999999999999E-008 eps=   1.0000000000000000E-008
  Starting point:   2.5000000000000000        1.5000000000000000     
