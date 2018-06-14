@@ -1,0 +1,40 @@
+ The structure of the answers follows the one in the ODE exercise.
+ =====================================================================
+                           Exercises A and B                          
+ =====================================================================
+ Precisions: absolute = 0.0001  relative = 0.0001
+
+
+ ODE: u'' = -u
+ Interval: a = 0.0 to b = 7.0
+ Initial conditions: y(a) = 0.0   y'(a) = 1.0
+ Integration errors estimates (the results are also presented in a plot)
+ Result:      y(b) = 0.656986579       y'(b) = 0.753902271
+ Should be: sin(b) = 0.656986599      cos(b) = 0.753902254
+ Errors: err(y(b)) = 0.000000020  err(y'(b)) = 0.000000017
+
+
+ ======================================================================
+                               Exercise C                              
+ ======================================================================
+ Function = sin(x)
+ Interval: 0.0 to 3.141592653
+ Integral =  2.000000000
+ Should be = 2.000000000
+ Error:      0.000000041
+
+ ----------------------------------------------------------------------
+
+ Function = x*exp(-x**2)
+ Interval: 0.0 to 5.0
+ Integral =  0.500001311
+ Should      0.500000000
+ Error:      0.000001313
+
+ ----------------------------------------------------------------------
+
+ Function = 1/sqrt(x)
+ Interval: 0.00000001 to 1.0
+ Integral =  1.999800086
+ Should      1.999799967
+ Error:      0.000000068
