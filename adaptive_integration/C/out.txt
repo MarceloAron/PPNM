@@ -1,0 +1,23 @@
+open4: integrating sqrt(x) from 0 to 1
+acc=0.0001 eps=0.0001
+              Q = 0.666709
+          exact = 0.666667
+          calls = 28
+estimated error = 0.000166671
+   actual error = 4.20973e-05
+
+open4: integrating 1/sqrt(x) from 0 to 1
+acc=0.0001 eps=0.0001
+              Q = 1.99999
+          exact = 2
+          calls = 12860
+estimated error = 0.000299999
+   actual error = 8.98634e-06
+
+open4: integrating log(x)/sqrt(x) from 0 to 1
+acc=0.001 eps=0.001
+              Q = -3.99979
+          exact = -4
+          calls = 8572
+estimated error = 0.00499979
+   actual error = 0.000209915

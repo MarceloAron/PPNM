@@ -1,0 +1,17 @@
+ MINIMIZATION OF ROSENBROCK'S FUNCTION
+ start point      :  -2.00000000       8.00000000    
+ value(start)     =   1609.00000    
+ qnewton: converged: norm(step)=   5.99543570E-09  < dx=   1.49011612E-08
+ steps            =          52
+ minimum found at :  0.999995530      0.999991059    
+ value(minim)     =   2.00785655E-11
+ gradient at minim:   2.11318408E-07  -1.08119515E-07
+
+ MINIMIZATION OF HIMMELBLAU'S FUNCTION
+ start point      :  -2.00000000       8.00000000    
+ value(start)     =   3026.00000    
+ qnewton: converged: norm(grad)=   2.03780729E-07  < eps=   9.99999997E-07
+ steps            =          15
+ minimum found at :  -2.80511808       3.13131261    
+ value(minim)     =   2.96906156E-14
+ gradient at minim:   1.70066443E-07   1.12267486E-07

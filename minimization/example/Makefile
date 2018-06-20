@@ -1,0 +1,19 @@
+FFLAGS = -ffree-form -fimplicit-none -std=gnu -O
+LDLIBS = -lgfortran -lm
+FC = gfortran
+
+all:out.txt
+	cat $<
+out.txt:main
+	./$< > $@
+
+%.o %.mod: %.f90
+	$(FC) $(FFLAGS) -c $<
+	touch $@
+
+main:main.o multimin.o
+main.o: multimin.mod
+
+clean:
+	find . -type f -executable -delete
+	rm -f *.o *.mod out*
