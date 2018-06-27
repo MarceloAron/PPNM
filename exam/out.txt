@@ -1,0 +1,41 @@
+ Examination project number 16: Classical 4th order Runge-Kutta ODE
+ stepper with step-doubling error estimate.
+ The structure of the answers follows the one in the ODE exercise.
+ =====================================================================
+                           Exercises A and B                          
+ =====================================================================
+ Absolute precision = 0.0000001
+ Relative precision = 0.0000001
+
+ ODE: u'' = -u
+ Interval: a = 0.0 to b = 7.0
+ Initial conditions: y(a) = 0.0   y'(a) = 1.0
+ Result:      y(b) = 0.656985680       y'(b) = 0.753902969
+ Should be: sin(b) = 0.656986599      cos(b) = 0.753902254
+ Errors: err(y(b)) = 0.000000919  err(y'(b)) = 0.000000714
+
+
+ ======================================================================
+                               Exercise C                              
+ ======================================================================
+ Function = sin(x)
+ Interval: 0.0 to 3.141592653
+ Integral =  2.000000390
+ Should be = 2.000000000
+ Error:      0.000000390
+
+ ----------------------------------------------------------------------
+
+ Function = x*exp(-x**2)
+ Interval: 0.0 to 5.0
+ Integral =  0.500000081
+ Should      0.500000000
+ Error:      0.000000081
+
+ ----------------------------------------------------------------------
+
+ Function = 1/sqrt(x)
+ Interval: 0.00000001 to 1.0
+ Integral =  1.999800330
+ Should      1.999800000
+ Error:      0.000000330
