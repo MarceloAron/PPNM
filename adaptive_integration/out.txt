@@ -1,0 +1,109 @@
+ ======================================================================
+                               Exercise A                              
+ ======================================================================
+ Function = sqrt(x)
+ Interval: 0.0 to 1.0
+ Integral = 0.666666703
+ Should be: 0.666666687
+ Estimated error: 0.000000222
+ Actual error:    0.000000016
+ Number of calls = 212
+
+ ----------------------------------------------------------------------
+
+ Function = 1/sqrt(x)
+ Interval: 0.0 to 1.0
+ Integral = 1.999999996
+ Should be: 2.000000000
+ Estimated error: 0.000000083
+ Actual error:    0.000000004
+ Number of calls = 89788
+
+ ----------------------------------------------------------------------
+
+ Function = ln(x)/sqrt(x)
+ Interval: 0.0 to 1.0
+ Integral = -3.999999998
+ Should be: -4.000000000
+ Estimated error: 0.000000027
+ Actual error:    0.000000002
+ Number of calls = 215396
+
+ ----------------------------------------------------------------------
+
+ Function = 4*sqrt(1-(1-x)**2)
+ Interval: 0.0 to 1.0
+ Integral = 3.141592653589793
+ Should be: 3.141592653589793
+ Estimated error: 0.000000000000003
+ Actual error:    0.000000000000000
+ Number of calls = 117600
+ ======================================================================
+                               Exercise B                              
+ ======================================================================
+ Function = (x**2)*exp(-x**2)
+ Interval: -Infinity to Infinity
+ Integral = 0.886223600
+ Should be: 0.886226925
+ Estimated error: 0.000000006
+ Actual error:    0.000003325
+ Number of calls = 1212
+
+ ----------------------------------------------------------------------
+
+ Function = 1/(x**3 - 1)
+ Interval: -Infinity to 0.0
+ Integral = -1.209199609
+ Should be: -1.209199576
+ Estimated error: 0.000000081
+ Actual error:    0.000000033
+ Number of calls = 388
+
+ ----------------------------------------------------------------------
+
+ Function = 1/(x**2 + 4)
+ Interval: 0.0 to Infinity
+ Integral = 0.7853981687
+ Should be: 0.7853981634
+ Estimated error: 0.0000001534
+ Actual error:    0.0000000053
+ Number of calls = 288
+ ======================================================================
+                               Exercise C                              
+ ======================================================================
+ Function = 1/sqrt(x)
+ Interval: 0.0 to 1.0
+ Integral = 1.999999996  (Normal)
+ Integral = 2.000000000  (Clenshaw-Curtis)
+ Should be: 2.000000000
+ Estimated error: 0.000000020
+ Actual error:    0.000000004  (Normal)
+ Actual error:    0.000000000  (Clenshaw-Curtis)
+ Number of calls =  89788  (Normal)
+ Number of calls = 348  (Clenshaw-Curtis)
+
+ ----------------------------------------------------------------------
+
+ Function = sin(x)/x
+ Interval: -1.0 to 1.0
+ Integral = 1.892166141  (Normal)
+ Integral = 1.892170347  (Clenshaw-Curtis)
+ Should be: 1.892166138
+ Estimated error: 0.000000151
+ Actual error:    0.000000003  (Normal)
+ Actual error:    0.000004210  (Clenshaw-Curtis)
+ Number of calls =    224  (Normal)
+ Number of calls =    452  (Clenshaw-Curtis)
+
+ ----------------------------------------------------------------------
+
+ Function = 1/sqrt(x**2 + 1)
+ Interval:  0.0 to 1.0
+ Integral = 0.881373607  (Normal)
+ Integral = 0.881373592  (Clenshaw-Curtis)
+ Should be: 0.881373584
+ Estimated error: 0.000000231
+ Actual error:    0.000000023  (Normal)
+ Actual error:    0.000000007  (Clenshaw-Curtis)
+ Number of calls =     88  (Normal)
+ Number of calls =    436  (Clenshaw-Curtis)
