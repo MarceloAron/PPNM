@@ -1,0 +1,31 @@
+ ======================================================================
+                               Exercise A                              
+ ======================================================================
+ Integrating r^2 dr dphi dtheta from 0-1, 0-2pi, 0-pi
+ Number of points:  1000000
+ Integral = 6.57427095796
+ Should be: 6.57973626739
+ Estimated error: 0.00587760274
+ Actual error:    0.00546530943
+
+ ----------------------------------------------------------------------
+
+ Integrating x**2 + y**2 + z**2 dx dy dz from 0-1, 0-2, 0-3
+ Number of points:  1000000
+ Integral =   28.01067
+ Should be:   28.00000
+ Estimated error:    0.01772
+ Actual error:       0.01067
+
+ ----------------------------------------------------------------------
+
+ Integrating (1-cos(x)*cos(y)*cos(z))**(-1)/pi**3 dx dy dz from 0-pi, 0-pi, 0-pi
+ Number of points:  1000000
+ Integral = 1.398622916312
+ Should be: 1.393203929686
+ Estimated error: 0.006429441669
+ Actual error:    0.005418986626
+ ======================================================================
+                               Exercise B                              
+ ======================================================================
+ Results shown in the form of a plot
