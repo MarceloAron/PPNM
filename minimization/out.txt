@@ -1,0 +1,59 @@
+ =====================================================================
+                               Exercise A                             
+ =====================================================================
+ Minimum of the Rosenbrock's valley function:
+ Starting point:  -2.00000000       8.00000000    
+ Number of steps:          25
+ Minimum at:   1.00000000       1.00000000    
+ Function at this point:   4.32134217E-21
+ Gradient at this point:   9.14405662E-10  -5.17630383E-10
+
+
+ Minimum of the Himmelblau's function:
+ Starting point:  -1.00000000       5.00000000    
+ Number of steps:           7
+ Minimum at:   3.00000000       2.00000000    
+ Function at this point:   7.88860905E-29
+ Gradient at this point:   1.77635684E-14   7.10542736E-14
+
+
+ Minimum of the test function: f(x,y) = (x-y+5)**2
+ Starting point:   1.00000000      -1.00000000    
+ Number of steps:           1
+ Minimum at:   5.00000000       3.00000000    
+ Function at this point:   0.00000000    
+ Gradient at this point:   0.00000000       0.00000000    
+ =====================================================================
+                               Exercise B                             
+ =====================================================================
+ Minimum of the Rosenbrock's valley function:
+ Starting point:   3.00000000      -4.00000000    
+ The method converged: |s| < dx
+   1.44923176E-08 <   1.49999995E-08
+ Number of steps:          43
+ Minimum at:  0.999995470      0.999991000    
+ Function at this point:   2.02654820E-11
+ Numerical gradient at this point:   3.35996084E-08  -1.04198987E-08
+ Analytical gradient at this point:  -5.98134648E-06  -1.51041991E-06
+
+
+ Minimum of the Himmelblau's function:
+ Starting point:   1.00000000       1.00000000    
+ The method converged: |s| < dx
+   1.04276632E-08 <   1.49999995E-08
+ Number of steps:          15
+ Minimum at:   3.00000000       2.00000000    
+ Function at this point:   2.13861123E-15
+ Numerical gradient at this point:   2.01053609E-08   2.04652406E-09
+ Analytical gradient at this point:  -5.34894639E-07  -2.52953470E-07
+
+
+ Minimum of the test function: f(x,y) = (x-5)**2 + (y-3)**2
+ Starting point:  -87.0000000       32.0000000    
+ The method converged: |s| < dx
+   1.55995460E-11 <   1.49999995E-08
+ Number of steps:           3
+ Minimum at:   5.00000000       3.00000000    
+ Function at this point:   1.12455535E-16
+ Numerical gradient at this point:   1.35917944E-11  -7.65565389E-12
+ Analytical gradient at this point:  -1.49864086E-08  -1.50076556E-08
