@@ -1,0 +1,6 @@
+ Hello
+ Hello 2
+ The method converged: |s| < dx
+   5.84650888E-06 <   1.49999996E-05
+ Oh, so wee passed 2
+ Ok this passed
