@@ -1,0 +1,13 @@
+ Function: ln(x)/sqrt(x)
+ Interval: 0.0 to 1.0
+ Integral = -3.999999998
+ Should be: -4.000000000
+ Estimated error: 0.000000027
+ Actual error:    0.000000002
+
+
+ Function: <psi|H|psi>/<psi|psi>
+ <psi|H|psi> = (alpha - alpha**2*x**2 + x**2)exp(-alpha*x**2)/2
+ <psi|psi> = exp(-alpha*x**2)
+ Minimum value of E: 0.50 at 1.00
+ Results also shown in the form of a plot
